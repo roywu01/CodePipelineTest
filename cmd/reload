@@ -1,0 +1,4 @@
+pkill -f "supervisor"
+pkill -f "uwsgi"
+/usr/local/bin/supervisord -c /home/ec2-user/svconfig
+/usr/local/bin/supervisorctl -c /home/ec2-user/svconfig

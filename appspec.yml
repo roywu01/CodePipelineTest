@@ -3,3 +3,9 @@ os: linux
 files:
   - source: /MarianProject
     destination: /var/www/html/
+hooks:
+  AfterInstall:
+    - location: cmd/reload
+      timeout: 300
+      runas: root
+
